@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.authors      = "Mengzhu"
   s.name         = "MZPushFlowSDK"
-  s.version      = "1.0.1"
+  s.version      = "1.0.0"
   s.summary      = "MZPushFlowSDK iOS SDK"
   s.description  = "Provide PushFlow Server Function"
   s.homepage     = "http://www.zmengzhu.com"
