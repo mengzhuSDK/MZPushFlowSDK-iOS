@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.authors      = "Mengzhu"
   s.name         = "MZPushFlowSDK"
-  s.version      = "2.2.0"
+  s.version      = "2.3.0"
   s.summary      = "MZPushFlowSDK iOS SDK"
   s.description  = "Provide PushFlow Server Function"
   s.homepage     = "http://www.zmengzhu.com"
@@ -11,5 +11,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true  
   s.ios.deployment_target = '9.0'
   s.vendored_frameworks = 'MZPushFlowSDK/MZPushFlowSDK.framework'
-  s.dependency 'MZCoreSDKLibrary', '~> 2.2.0'
   end

@@ -99,9 +99,19 @@
 - (void)switchCameraIsFront:(BOOL)isFront;
 
 /**
- * 美颜开关
+ * 美颜开关 主意：此方法不推荐使用，请使用 setBeautyFaceLevel: 方法来控制开关美颜
  */
 - (void)setBeautyFace:(BOOL)beautyFace;
+
+/**
+  * 美颜等级
+ */
+- (void)setBeautyFaceLevel:(MZBeautyFaceLevel)beautyFaceLevel;
+
+/**
+ * 设置分辨率等级
+ */
+- (void)setCaptureSessionPreset:(MZCaptureSessionPreset)captureSessionPreset;
 
 /**
  * 镜像开关

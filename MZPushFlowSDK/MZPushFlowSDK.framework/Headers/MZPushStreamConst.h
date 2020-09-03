@@ -35,6 +35,20 @@ typedef NS_ENUM (NSUInteger, MZCaptureSessionPreset){
     MZCaptureSessionPreset720x1280 = 2
 };
 
+/// 美颜等级
+typedef NS_ENUM (NSUInteger, MZBeautyFaceLevel){
+    /// 美颜等级无
+    MZBeautyFaceLevel_None = 9,
+    /// 美颜等级低
+    MZBeautyFaceLevel_Low = 0,
+    /// 美颜等级中
+    MZBeautyFaceLevel_Medium = 1,
+    /// 美颜等级高
+    MZBeautyFaceLevel_High = 2,
+    /// 美颜等级最高
+    MZBeautyFaceLevel_VeryHigh = 3,
+};
+
 #pragma mark - 音频定义
 
 /// 直播音频质量
