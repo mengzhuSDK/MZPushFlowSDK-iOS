@@ -9,6 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "MZPushStreamConst.h"
 
+/**
+ *  自定义Log，可配置开关（用于替换NSLog）
+ */
+#define MZPushFlowLog(format,...) MZ_PushFlow_CustomLog(__FUNCTION__,__LINE__,format,##__VA_ARGS__)
+
+void MZ_PushFlow_CustomLog(const char *func, int lineNumber, NSString *format, ...);
+
 @protocol MZAVCaptureDelegate <NSObject>
 
 /**
@@ -32,6 +39,12 @@
 @interface MZPushStreamManager : NSObject
 @property (nonatomic,   weak) id<MZAVCaptureDelegate> stateDelegate;//状态变化回调
 @property (nonatomic, strong) UIView *preview;//预览view
+
+/**
+ * @brief 日志开关
+ * @param logEnable 是否打印日志，默认为NO
+ */
++ (void)setLogEnable:(BOOL)logEnable;
 
 /**
  * @brief 视频推流初始化 - 推荐此方法 (码率，帧率fps，音频, 都是根据分辨率自动配置的最优选项)
